@@ -18,8 +18,8 @@
             <HBox fx:id="HBOX" prefHeight="100.0" prefWidth="200.0">
                <children>
                   <TextField fx:id="txtMsg" prefHeight="39.0" prefWidth="394.0" />
-                  <Button fx:id="btnImage" mnemonicParsing="false" onAction="#btnImageOnAction" prefHeight="35.0" prefWidth="112.0" text="Image" />
-                  <Button fx:id="btnSend" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="35.0" prefWidth="112.0" text="Send" />
+                  <Button style="-fx-background-color: black" fx:id="btnImage" mnemonicParsing="false" onAction="#btnImageOnAction" prefHeight="35.0" prefWidth="112.0" text="Image" />
+                  <Button style="-fx-background-color: black" fx:id="btnSend" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="35.0" prefWidth="112.0" text="Send" />
                </children>
             </HBox>
          </children>
@@ -34,39 +34,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-<!-- public void initialize() {
-        new Thread(() -> {
-            try {
-                ServerSocket serverSocket = new ServerSocket();
-                txtareaServer.appendText("Server is Start \n");
-                Socket socket = serverSocket.accept();
-                txtareaServer.appendText("Client is Connected \n");
-
-                dataInputStream = new DataInputStream(socket.getInputStream());
-                dataOutputStream = new DataOutputStream(socket.getOutputStream());
-
-                while (!massage.equals("exit")){
-                    massage = dataInputStream.readUTF();
-                    txtareaServer.appendText("Client : " + massage);
-                }
-
-
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        }).start();
-    }
-    public void btnServerOnAction(ActionEvent actionEvent) throws IOException {
-        dataOutputStream.writeUTF(txtServer.getText().trim());
-        dataOutputStream.flush();
-    }
-    }-->

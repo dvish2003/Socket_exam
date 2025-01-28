@@ -1,4 +1,4 @@
-package lk.ijse.Contollers;
+package lk.ijse;
 
 /**
  * Author: vishmee
@@ -6,4 +6,7 @@ package lk.ijse.Contollers;
  * Time: 10:17 AM
  * Description: 
  */public class LauncherWrapper_1 {
+    public static void main(String[] args) {
+        Launcher_1.main(args);
+    }
 }
